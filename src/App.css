@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(240, 240, 240);
+}
+
 .saerchBar {
   display: flex;
   justify-content: center;
@@ -6,13 +10,13 @@
 
 .title {
   text-align: center;
+  font-family: -webkit-pictograph;
 }
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  /* width: 70%; */
   height: 30vh;
 }
 
@@ -26,7 +30,7 @@
 
 button {
   height: 34px;
-  background-color: #9797f3;
+  background-color: #00c0ff;
   border: transparent;
   color: white;
   width: 100px;
@@ -38,7 +42,7 @@ button {
 .table {
   margin: auto;
   border-collapse: collapse;
-  width: 90%;
+  width: 100%;
   box-shadow: 0px 0px 16px -5px grey;
   margin-bottom: 10vh;
 }
@@ -58,12 +62,11 @@ tr {
 }
 
 .table .headRow {
-  background-color: #9797f3;
+  background-color: #00c0ff;
   color: white;
   height: 50px;
   text-align: left;
   box-shadow: 0 4px 4px -2px gray;
-  ;
 }
 
 .trow {
@@ -79,8 +82,8 @@ tr {
 }
 
 .pagination>.active>a {
-  background-color: #9797f3;
-  border-color: #9797f3;
+  background-color: #00c0ff;
+  border-color: #00c0ff;
   color: #fff;
 }
 
@@ -96,14 +99,14 @@ tr {
 .pagination>.active>span:hover,
 .pagination>.active>a:focus,
 .pagination>.active>span:focus {
-  background-color: #9797f3;
-  border-color: #9797f3;
+  background-color: #00c0ff;
+  border-color: #00c0ff;
   outline: none;
 }
 
 .pagination>li>a,
 .pagination>li>span {
-  color: #9797f3
+  color: #00c0ff
 }
 
 .pagination>li:first-child>a,

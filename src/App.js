@@ -43,7 +43,7 @@ class App extends PureComponent {
           this.setState({
             error: false,
             pageCount: Math.ceil(data.length / this.state.perPage),
-            transactionsData: res.data,
+            transactionsData: res.data.result,
             tableData: slice,
           });
         } else {
@@ -92,7 +92,9 @@ class App extends PureComponent {
         <Container maxWidth="lg">
           <header className="header">
             <div className="titleContainer">
-              <h1 className="title">Ethereum Transactions</h1>
+              <h1 className="title">
+                <span style={{ color: "#00c0ff" }}>Ethereum</span> Transactions
+              </h1>
             </div>
             <div className="saerchBar">
               <input
@@ -104,7 +106,9 @@ class App extends PureComponent {
               <button onClick={() => this.hanldeAddress()}>find</button>
             </div>
           </header>
-
+          <p style={{ fontSize: "15px" }}>
+            Here you can find the latest transaction filtered by address:
+          </p>
           <table className="table">
             <thead>
               <tr className="headRow">
@@ -114,7 +118,7 @@ class App extends PureComponent {
                 <th className="tablehead">From Address</th>
                 <th className="tablehead">To Address</th>
                 <th className="tablehead">Value</th>
-                <th className="tablehead">confirmations</th>
+                <th className="tablehead">Confirmations</th>
                 <th className="tablehead">Hash</th>
               </tr>
             </thead>
