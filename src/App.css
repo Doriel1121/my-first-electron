@@ -2,6 +2,15 @@ body {
   background-color: rgb(240, 240, 240);
 }
 
+.myonlyinput {
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  width: 400px;
+  height: 30px;
+}
+
+
 .saerchBar {
   display: flex;
   justify-content: center;
@@ -20,13 +29,6 @@ body {
   height: 30vh;
 }
 
-.myonlyinput {
-  margin-right: 10px;
-  border-radius: 5px;
-  border: 1px solid grey;
-  width: 300px;
-  height: 30px;
-}
 
 button {
   height: 34px;
@@ -123,5 +125,21 @@ tr {
 }
 
 .typography {
-  width: 15vw;
+  width: 13vw;
+}
+
+@media screen and (max-width:850px) {
+  .myonlyinput {
+    width: 250px
+  }
+
+  .header {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .table .headRow {
+    font-size: 12px;
+    text-align: center;
+  }
 }
